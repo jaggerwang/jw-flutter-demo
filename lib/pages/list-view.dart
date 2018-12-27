@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../components/drawer.dart';
 
-class ScrollPage extends StatefulWidget {
+class ListViewPage extends StatefulWidget {
   @override
-  ScrollPageState createState() => ScrollPageState();
+  ListViewPageState createState() => ListViewPageState();
 }
 
-class ScrollPageState extends State<ScrollPage> {
+class ListViewPageState extends State<ListViewPage> {
   final _controller = ScrollController();
 
   Future<Null> _refresh() {

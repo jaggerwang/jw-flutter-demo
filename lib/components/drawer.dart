@@ -36,7 +36,7 @@ class JWDrawerState extends State<JWDrawer> {
         {
           'title': 'ListView',
           'isSelected': false,
-          'pageBuilder': (BuildContext context) => ScrollPage(),
+          'pageBuilder': (BuildContext context) => ListViewPage(),
         },
       ],
     },

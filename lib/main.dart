@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(JWApp());
 
-class MyApp extends StatelessWidget {
+class JWApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
