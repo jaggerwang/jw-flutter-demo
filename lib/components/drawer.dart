@@ -67,12 +67,16 @@ class JWDrawerState extends State<JWDrawer> {
 
     _resetPanels();
 
-    Navigator.of(context).pushReplacement(MaterialPageRoute(
-      builder: (context) => HomePage(),
-    ));
+    Navigator.of(context)
+      ..pop()
+      ..pushReplacement(MaterialPageRoute(
+        builder: (context) => HomePage(),
+      ));
   }
 
   void _onExpand(index, isExpanded) {
+    _resetPanels();
+
     _panels[index]['isExpanded'] = !isExpanded;
 
     setState(() {});
@@ -86,9 +90,11 @@ class JWDrawerState extends State<JWDrawer> {
     panel['isExpanded'] = true;
     item['isSelected'] = true;
 
-    Navigator.of(context).pushReplacement(MaterialPageRoute(
-      builder: item['pageBuilder'],
-    ));
+    Navigator.of(context)
+      ..pop()
+      ..pushReplacement(MaterialPageRoute(
+        builder: item['pageBuilder'],
+      ));
   }
 
   @override
@@ -109,7 +115,10 @@ class JWDrawerState extends State<JWDrawer> {
           ),
           ListTile(
             onTap: _goHome,
-            title: Text('Home'),
+            title: Text(
+              'Home',
+              style: TextStyle(fontSize: 16),
+            ),
             selected: _isHome,
             dense: true,
           ),
@@ -119,7 +128,10 @@ class JWDrawerState extends State<JWDrawer> {
                 .map<ExpansionPanel>(
                   (panel) => ExpansionPanel(
                         headerBuilder: (context, isExpanded) => ListTile(
-                              title: Text(panel['title']),
+                              title: Text(
+                                panel['title'],
+                                style: TextStyle(fontSize: 16),
+                              ),
                               selected: isExpanded,
                               dense: true,
                             ),
