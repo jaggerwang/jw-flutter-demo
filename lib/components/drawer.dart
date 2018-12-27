@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 
-import '../pages/home.dart';
-import '../pages/list-view.dart';
+import '../pages/pages.dart';
 
 class JWDrawer extends StatefulWidget {
   @override
