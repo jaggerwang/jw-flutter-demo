@@ -13,13 +13,13 @@ class JWDrawerState extends State<JWDrawer> {
   static var _isHome = true;
   static final _panels = [
     {
-      'title': 'Dialog',
+      'title': 'Navigation',
       'isExpanded': false,
       'items': [
         {
-          'title': 'AlertDialog',
+          'title': 'TabBar',
           'isSelected': false,
-          'pageBuilder': null,
+          'pageBuilder': (BuildContext context) => TabBarPage(),
         },
       ],
     },
@@ -27,11 +27,6 @@ class JWDrawerState extends State<JWDrawer> {
       'title': 'Scroll',
       'isExpanded': false,
       'items': [
-        {
-          'title': 'CustomScrollView',
-          'isSelected': false,
-          'pageBuilder': null,
-        },
         {
           'title': 'ListView',
           'isSelected': false,
