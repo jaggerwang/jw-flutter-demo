@@ -119,34 +119,41 @@ class JWDrawerState extends State<JWDrawer> {
           ExpansionPanelList(
             expansionCallback: _onExpand,
             children: _panels
-                .map<ExpansionPanel>(
-                  (panel) => ExpansionPanel(
-                        headerBuilder: (context, isExpanded) => ListTile(
-                              title: Text(
-                                panel['title'],
-                                style: TextStyle(fontSize: 16),
+                .asMap()
+                .map<int, ExpansionPanel>(
+                  (index, panel) => MapEntry(
+                        index,
+                        ExpansionPanel(
+                          headerBuilder: (context, isExpanded) => ListTile(
+                                onTap: () =>
+                                    _onExpand(index, panel['isExpanded']),
+                                title: Text(
+                                  panel['title'],
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                selected: isExpanded,
+                                dense: true,
                               ),
-                              selected: isExpanded,
-                              dense: true,
+                          body: Container(
+                            padding: EdgeInsets.only(left: 15),
+                            child: Column(
+                              children: (panel['items']
+                                      as List<Map<String, Object>>)
+                                  .map<Widget>((item) => ListTile(
+                                        onTap: () => _onSelected(panel, item),
+                                        title: Text(item['title']),
+                                        selected: item['isSelected'],
+                                        dense: true,
+                                        enabled: item['pageBuilder'] != null,
+                                      ))
+                                  .toList(),
                             ),
-                        body: Container(
-                          padding: EdgeInsets.only(left: 15),
-                          child: Column(
-                            children:
-                                (panel['items'] as List<Map<String, Object>>)
-                                    .map<Widget>((item) => ListTile(
-                                          onTap: () => _onSelected(panel, item),
-                                          title: Text(item['title']),
-                                          selected: item['isSelected'],
-                                          dense: true,
-                                          enabled: item['pageBuilder'] != null,
-                                        ))
-                                    .toList(),
                           ),
+                          isExpanded: panel['isExpanded'],
                         ),
-                        isExpanded: panel['isExpanded'],
                       ),
                 )
+                .values
                 .toList(),
           ),
           Divider(),
