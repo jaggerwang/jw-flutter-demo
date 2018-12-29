@@ -9,7 +9,7 @@ class JWDrawer extends StatefulWidget {
 }
 
 class JWDrawerState extends State<JWDrawer> {
-  static var _packageInfo = PackageInfo();
+  static var _packageInfo;
   static var _isHome = true;
   static final _panels = [
     {
@@ -40,11 +40,13 @@ class JWDrawerState extends State<JWDrawer> {
   void initState() {
     super.initState();
 
-    PackageInfo.fromPlatform().then((packageInfo) {
-      setState(() {
-        _packageInfo = packageInfo;
+    if (_packageInfo == null) {
+      PackageInfo.fromPlatform().then((packageInfo) {
+        setState(() {
+          _packageInfo = packageInfo;
+        });
       });
-    });
+    }
   }
 
   void _resetPanels() {

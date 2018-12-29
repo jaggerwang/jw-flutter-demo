@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../components/components.dart';
 import 'pages.dart';
 
 class TabBarPage extends StatelessWidget {
@@ -9,6 +10,7 @@ class TabBarPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('TabBar'),
       ),
+      drawer: JWDrawer(),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 5),
         child: Column(
