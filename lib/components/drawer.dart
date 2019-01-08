@@ -9,9 +9,20 @@ class JWDrawer extends StatefulWidget {
 }
 
 class JWDrawerState extends State<JWDrawer> {
-  static var _packageInfo;
+  static var _packageInfo = PackageInfo();
   static var _isHome = true;
   static final _panels = [
+    {
+      'title': 'Layout',
+      'isExpanded': false,
+      'items': [
+        {
+          'title': 'Scaffold',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => ScaffoldPage(),
+        },
+      ],
+    },
     {
       'title': 'Navigation',
       'isExpanded': false,
@@ -40,13 +51,11 @@ class JWDrawerState extends State<JWDrawer> {
   void initState() {
     super.initState();
 
-    if (_packageInfo == null) {
-      PackageInfo.fromPlatform().then((packageInfo) {
-        setState(() {
-          _packageInfo = packageInfo;
-        });
+    PackageInfo.fromPlatform().then((packageInfo) {
+      setState(() {
+        _packageInfo = packageInfo;
       });
-    }
+    });
   }
 
   void _resetPanels() {

@@ -1,3 +1,5 @@
+export 'layout/scaffold.dart';
+
 export 'tab_bar/first_tab.dart';
 export 'tab_bar/second_tab.dart';
 export 'tab_bar/tab.dart';
