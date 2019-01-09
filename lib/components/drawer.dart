@@ -3,12 +3,12 @@ import 'package:package_info/package_info.dart';
 
 import '../pages/pages.dart';
 
-class JWDrawer extends StatefulWidget {
+class JWFDDrawer extends StatefulWidget {
   @override
-  JWDrawerState createState() => JWDrawerState();
+  JWFDDrawerState createState() => JWFDDrawerState();
 }
 
-class JWDrawerState extends State<JWDrawer> {
+class JWFDDrawerState extends State<JWFDDrawer> {
   static var _packageInfo = PackageInfo();
   static var _isHome = true;
   static final _panels = [
@@ -20,6 +20,26 @@ class JWDrawerState extends State<JWDrawer> {
           'title': 'Scaffold',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => ScaffoldPage(),
+        },
+        {
+          'title': 'Pavlova',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => PavlovaPage(),
+        },
+        {
+          'title': 'Horizontal and Vertical Align',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => HoriVertAlignPage(),
+        },
+        {
+          'title': 'Horizontal and Vertical Sizing',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => HoriVertSizingPage(),
+        },
+        {
+          'title': 'Container',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => ContainerPage(),
         },
       ],
     },
@@ -105,7 +125,7 @@ class JWDrawerState extends State<JWDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
+      child: ListView(
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(

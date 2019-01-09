@@ -10,7 +10,7 @@ class TabBarPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('TabBar'),
       ),
-      drawer: JWDrawer(),
+      drawer: JWFDDrawer(),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 5),
         child: Column(

@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home'),
       ),
-      drawer: JWDrawer(),
+      drawer: JWFDDrawer(),
       body: Center(
         child: Text(
           'JW Flutter Demo',

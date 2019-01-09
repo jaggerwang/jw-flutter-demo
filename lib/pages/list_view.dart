@@ -22,7 +22,7 @@ class ListViewPageState extends State<ListViewPage> {
       appBar: AppBar(
         title: Text('ListView'),
       ),
-      drawer: JWDrawer(),
+      drawer: JWFDDrawer(),
       body: RefreshIndicator(
         onRefresh: _refresh,
         child: ListView.builder(
