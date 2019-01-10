@@ -41,6 +41,36 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'isSelected': false,
           'pageBuilder': (BuildContext context) => ContainerPage(),
         },
+        {
+          'title': 'Grid View Extent',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => GridViewExtentPage(),
+        },
+        {
+          'title': 'Grid View Count',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => GridViewCountPage(),
+        },
+        {
+          'title': 'List View',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => ListViewPage(),
+        },
+        {
+          'title': 'Stack',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => StackPage(),
+        },
+        {
+          'title': 'Card',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => CardPage(),
+        },
+        {
+          'title': 'Lake',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => LakePage(),
+        },
       ],
     },
     {
@@ -59,9 +89,9 @@ class JWFDDrawerState extends State<JWFDDrawer> {
       'isExpanded': false,
       'items': [
         {
-          'title': 'ListView',
+          'title': 'List View Scroll',
           'isSelected': false,
-          'pageBuilder': (BuildContext context) => ListViewPage(),
+          'pageBuilder': (BuildContext context) => ListViewScrollPage(),
         },
       ],
     },

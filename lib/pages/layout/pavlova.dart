@@ -5,7 +5,7 @@ import '../../components/components.dart';
 class PavlovaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var titleText = Container(
+    final titleText = Container(
       padding: EdgeInsets.all(20),
       child: Text(
         'Strawberry Pavlova',
@@ -17,7 +17,7 @@ class PavlovaPage extends StatelessWidget {
       ),
     );
 
-    var subTitle = Text(
+    final subTitle = Text(
       '''
 Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.
 ''',
@@ -28,7 +28,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       ),
     );
 
-    var ratings = Container(
+    final ratings = Container(
       padding: EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -57,7 +57,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       ),
     );
 
-    var descTextStyle = TextStyle(
+    final descTextStyle = TextStyle(
       color: Colors.black,
       fontWeight: FontWeight.w800,
       fontFamily: 'Roboto',
@@ -66,7 +66,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       height: 2,
     );
 
-    var iconList = DefaultTextStyle.merge(
+    final iconList = DefaultTextStyle.merge(
       style: descTextStyle,
       child: Container(
         padding: EdgeInsets.all(20),
@@ -99,7 +99,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       ),
     );
 
-    var leftColumn = Container(
+    final leftColumn = Container(
       padding: EdgeInsets.fromLTRB(20, 30, 20, 20),
       child: Column(
         children: [
@@ -111,7 +111,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       ),
     );
 
-    var mainImage = Image.asset(
+    final mainImage = Image.asset(
       'assets/images/pavlova.jpg',
       fit: BoxFit.cover,
     );

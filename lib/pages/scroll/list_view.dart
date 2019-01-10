@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../components/components.dart';
+import '../../components/components.dart';
 
-class ListViewPage extends StatefulWidget {
+class ListViewScrollPage extends StatefulWidget {
   @override
-  ListViewPageState createState() => ListViewPageState();
+  _ListViewScrollPageState createState() => _ListViewScrollPageState();
 }
 
-class ListViewPageState extends State<ListViewPage> {
+class _ListViewScrollPageState extends State<ListViewScrollPage> {
   final _controller = ScrollController();
 
   Future<Null> _refresh() {
@@ -20,7 +20,7 @@ class ListViewPageState extends State<ListViewPage> {
     final items = List<int>.generate(100, (i) => i + 1).toList();
     return Scaffold(
       appBar: AppBar(
-        title: Text('ListView'),
+        title: Text('List View Scroll'),
       ),
       drawer: JWFDDrawer(),
       body: RefreshIndicator(

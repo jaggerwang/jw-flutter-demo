@@ -7,7 +7,7 @@ class ScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material Scaffold'),
+        title: Text('Scaffold'),
       ),
       drawer: JWFDDrawer(),
       body: Center(
