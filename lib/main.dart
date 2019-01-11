@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
 
-void main() => runApp(JWApp());
-
 class JWApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,3 +14,5 @@ class JWApp extends StatelessWidget {
     );
   }
 }
+
+void main() => runApp(JWApp());

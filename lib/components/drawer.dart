@@ -89,9 +89,14 @@ class JWFDDrawerState extends State<JWFDDrawer> {
       'isExpanded': false,
       'items': [
         {
-          'title': 'List View Scroll',
+          'title': 'Refresh Indicator',
           'isSelected': false,
-          'pageBuilder': (BuildContext context) => ListViewScrollPage(),
+          'pageBuilder': (BuildContext context) => RefreshIndicatorPage(),
+        },
+        {
+          'title': 'Silver App Bar',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => SilverAppBarScrollPage(),
         },
       ],
     },

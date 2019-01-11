@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../components/components.dart';
 
-class ListViewScrollPage extends StatefulWidget {
+class RefreshIndicatorPage extends StatefulWidget {
   @override
-  _ListViewScrollPageState createState() => _ListViewScrollPageState();
+  _RefreshIndicatorPageState createState() => _RefreshIndicatorPageState();
 }
 
-class _ListViewScrollPageState extends State<ListViewScrollPage> {
+class _RefreshIndicatorPageState extends State<RefreshIndicatorPage> {
   final _controller = ScrollController();
 
   Future<Null> _refresh() {
@@ -18,9 +18,10 @@ class _ListViewScrollPageState extends State<ListViewScrollPage> {
   @override
   Widget build(BuildContext context) {
     final items = List<int>.generate(100, (i) => i + 1).toList();
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('List View Scroll'),
+        title: Text('Refresh Indicator'),
       ),
       drawer: JWFDDrawer(),
       body: RefreshIndicator(
@@ -35,7 +36,11 @@ class _ListViewScrollPageState extends State<ListViewScrollPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => _controller.jumpTo(0),
+        onPressed: () => _controller.animateTo(
+              0,
+              curve: Curves.easeOut,
+              duration: const Duration(milliseconds: 300),
+            ),
         child: Icon(Icons.arrow_upward, color: Colors.white),
       ),
     );
