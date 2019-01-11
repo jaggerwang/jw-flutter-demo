@@ -13,11 +13,7 @@ export 'layout/stack.dart';
 export 'scroll/silver_app_bar.dart';
 export 'scroll/refresh_indicator.dart';
 
-export 'navigation/back.dart';
-export 'navigation/bootstrap.dart';
-export 'navigation/first_tab.dart';
-export 'navigation/second_tab.dart';
+export 'navigation/basic.dart';
 export 'navigation/tab_bar.dart';
-export 'navigation/third_tab.dart';
 
 export 'home.dart';

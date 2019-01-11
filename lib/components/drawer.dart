@@ -78,9 +78,14 @@ class JWFDDrawerState extends State<JWFDDrawer> {
       'isExpanded': false,
       'items': [
         {
-          'title': 'TabBar',
+          'title': 'Basic',
           'isSelected': false,
-          'pageBuilder': (BuildContext context) => BootstrapPage(),
+          'pageBuilder': (BuildContext context) => BasicNavigationPage(),
+        },
+        {
+          'title': 'Tab Bar',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => TabBarNavigationPage(),
         },
       ],
     },
