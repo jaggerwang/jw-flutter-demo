@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../../components/components.dart';
 
-class TabPage extends StatefulWidget {
-  static final globalKey = GlobalKey<_TabPageState>();
+class TabBarPage extends StatefulWidget {
+  static final globalKey = GlobalKey<_TabBarPageState>();
 
-  TabPage() : super(key: globalKey);
+  TabBarPage() : super(key: globalKey);
 
   @override
-  _TabPageState createState() => _TabPageState();
+  _TabBarPageState createState() => _TabBarPageState();
 }
 
-class _TabPageState extends State<TabPage> {
+class _TabBarPageState extends State<TabBarPage> {
   final _navigatorKeys = JWTabBar.tabs
       .map<GlobalKey<NavigatorState>>((v) => GlobalKey<NavigatorState>())
       .toList();

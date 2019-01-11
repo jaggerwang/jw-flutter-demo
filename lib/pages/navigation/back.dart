@@ -5,7 +5,7 @@ class BackPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Back Page'),
+        title: Text('Back'),
       ),
       body: Center(
         child: RaisedButton(

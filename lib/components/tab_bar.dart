@@ -34,7 +34,7 @@ class JWTabBar extends StatelessWidget {
       currentIndex: currentIndex,
       onTap: (index) {
         if (index != currentIndex) {
-          TabPage.globalKey.currentState.switchTab(index);
+          TabBarPage.globalKey.currentState.switchTab(index);
         }
       },
       items: tabs

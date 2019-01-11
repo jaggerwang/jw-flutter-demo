@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../components/components.dart';
-import 'pages.dart';
+import '../../components/components.dart';
+import 'tab_bar.dart';
 
-class TabBarPage extends StatelessWidget {
+class BootstrapPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TabBar'),
+        title: Text('Bootstrap'),
       ),
       drawer: JWFDDrawer(),
       body: Container(
@@ -19,7 +19,7 @@ class TabBarPage extends StatelessWidget {
             Spacer(flex: 3),
             RaisedButton(
               onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => TabPage(),
+                    builder: (context) => TabBarPage(),
                   )),
               child: Text('Show Tabs'),
             ),
