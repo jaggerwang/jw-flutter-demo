@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/home.dart';
+import 'pages/pages.dart';
 
 class JWApp extends StatelessWidget {
   @override
@@ -10,6 +10,9 @@ class JWApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
+      routes: {
+        '/back': (context) => BackPage(),
+      },
       home: HomePage(),
     );
   }
