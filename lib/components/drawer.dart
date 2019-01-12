@@ -107,6 +107,11 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'isSelected': false,
           'pageBuilder': (BuildContext context) => HeroPage(),
         },
+        {
+          'title': 'Nested',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => NestedNavigationPage(),
+        },
       ],
     },
     {

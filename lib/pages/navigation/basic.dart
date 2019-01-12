@@ -13,11 +13,9 @@ class BasicNavigationPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('Go'),
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => _BackPage(),
-            ));
-          },
+          onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => _BackPage(),
+              )),
         ),
       ),
     );

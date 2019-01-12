@@ -16,6 +16,7 @@ export 'scroll/refresh_indicator.dart';
 export 'navigation/basic.dart';
 export 'navigation/hero.dart';
 export 'navigation/named_route.dart';
+export 'navigation/nested.dart';
 export 'navigation/return_data.dart';
 export 'navigation/send_data.dart';
 export 'navigation/tab_bar.dart';
