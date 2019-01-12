@@ -83,9 +83,19 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'pageBuilder': (BuildContext context) => BasicNavigationPage(),
         },
         {
-          'title': 'Tab Bar',
+          'title': 'TabBar',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => TabBarNavigationPage(),
+        },
+        {
+          'title': 'Send Data',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => SendDataPage(),
+        },
+        {
+          'title': 'Return Data',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => ReturnDataPage(),
         },
       ],
     },

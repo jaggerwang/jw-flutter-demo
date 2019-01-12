@@ -7,7 +7,7 @@ class TabBarNavigationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tab Bar Navigation'),
+        title: Text('TabBar Navigation'),
       ),
       drawer: JWFDDrawer(),
       body: Container(
