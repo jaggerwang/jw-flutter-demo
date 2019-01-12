@@ -32,7 +32,7 @@ class SendDataPage extends StatelessWidget {
               onTap: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => _DetailScreen(todo: todos[index]),
+                      builder: (context) => _DetailPage(todo: todos[index]),
                     ),
                   ),
             ),
@@ -41,10 +41,10 @@ class SendDataPage extends StatelessWidget {
   }
 }
 
-class _DetailScreen extends StatelessWidget {
+class _DetailPage extends StatelessWidget {
   final _Todo todo;
 
-  _DetailScreen({
+  _DetailPage({
     Key key,
     @required this.todo,
   }) : super(key: key);

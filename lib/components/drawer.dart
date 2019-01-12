@@ -102,6 +102,11 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'isSelected': false,
           'pageBuilder': (BuildContext context) => NamedRoutePage(),
         },
+        {
+          'title': 'Hero',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => HeroPage(),
+        },
       ],
     },
     {
