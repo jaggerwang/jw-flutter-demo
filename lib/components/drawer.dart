@@ -133,6 +133,11 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'isSelected': false,
           'pageBuilder': (BuildContext context) => SilverAppBarScrollPage(),
         },
+        {
+          'title': 'Tabbox',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => TapboxPage(),
+        },
       ],
     },
   ];
