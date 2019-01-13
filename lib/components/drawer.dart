@@ -115,9 +115,14 @@ class JWFDDrawerState extends State<JWFDDrawer> {
       ],
     },
     {
-      'title': 'Scroll',
+      'title': 'Ineraction',
       'isExpanded': false,
       'items': [
+        {
+          'title': 'Favorite Lake',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => FavoriteLakePage(),
+        },
         {
           'title': 'Refresh Indicator',
           'isSelected': false,
