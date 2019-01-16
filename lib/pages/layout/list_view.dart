@@ -53,8 +53,10 @@ class ListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = theaters
         .map<Widget>((theater) => ListTile(
-              title: Text(theater['title'],
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20)),
+              title: Text(
+                theater['title'],
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+              ),
               subtitle: Text(theater['subtitle']),
               leading: Icon(
                 Icons.theaters,
@@ -66,8 +68,10 @@ class ListViewPage extends StatelessWidget {
     items.add(Divider());
 
     items.addAll(restaurants.map<Widget>((restaurant) => ListTile(
-          title: Text(restaurant['title'],
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20)),
+          title: Text(
+            restaurant['title'],
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+          ),
           subtitle: Text(restaurant['subtitle']),
           leading: Icon(
             Icons.restaurant,

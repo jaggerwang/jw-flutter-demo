@@ -17,8 +17,10 @@ class CardPage extends StatelessWidget {
             child: Column(
               children: [
                 ListTile(
-                  title: Text('1625 Main Street',
-                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  title: Text(
+                    '1625 Main Street',
+                    style: TextStyle(fontWeight: FontWeight.w500),
+                  ),
                   subtitle: Text('My City, CA 99984'),
                   leading: Icon(
                     Icons.restaurant_menu,
@@ -27,8 +29,10 @@ class CardPage extends StatelessWidget {
                 ),
                 Divider(),
                 ListTile(
-                  title: Text('(408) 555-1212',
-                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  title: Text(
+                    '(408) 555-1212',
+                    style: TextStyle(fontWeight: FontWeight.w500),
+                  ),
                   leading: Icon(
                     Icons.contact_phone,
                     color: Colors.blue[500],
