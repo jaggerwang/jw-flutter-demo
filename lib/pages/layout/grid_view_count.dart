@@ -8,10 +8,10 @@ class GridViewCountPage extends StatelessWidget {
 
     return GridView.count(
       crossAxisCount: (orientation == Orientation.portrait) ? 2 : 3,
-      padding: const EdgeInsets.all(4.0),
-      mainAxisSpacing: 4.0,
-      crossAxisSpacing: 4.0,
-      childAspectRatio: (orientation == Orientation.portrait) ? 1.0 : 1.3,
+      padding: const EdgeInsets.all(4),
+      mainAxisSpacing: 4,
+      crossAxisSpacing: 4,
+      childAspectRatio: (orientation == Orientation.portrait) ? 1 : 1.3,
       children: List<Widget>.generate(
         30,
         (index) => GridTile(

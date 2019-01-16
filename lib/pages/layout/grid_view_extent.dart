@@ -5,10 +5,10 @@ import '../../components/components.dart';
 class GridViewExtentPage extends StatelessWidget {
   Widget buildGrid() {
     return GridView.extent(
-      maxCrossAxisExtent: 150.0,
-      padding: const EdgeInsets.all(4.0),
-      mainAxisSpacing: 4.0,
-      crossAxisSpacing: 4.0,
+      maxCrossAxisExtent: 150,
+      padding: const EdgeInsets.all(4),
+      mainAxisSpacing: 4,
+      crossAxisSpacing: 4,
       children: List<Widget>.generate(
         30,
         (index) => Container(

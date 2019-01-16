@@ -46,14 +46,14 @@ class _SelectionPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8),
               child: RaisedButton(
                 onPressed: () => Navigator.pop(context, 'Yep!'),
                 child: Text('Yep!'),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8),
               child: RaisedButton(
                 onPressed: () => Navigator.pop(context, 'Nope.'),
                 child: Text('Nope.'),
