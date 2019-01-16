@@ -12,7 +12,6 @@ export 'layout/hori_vert_sizing.dart';
 export 'layout/lake.dart';
 export 'layout/list_view.dart';
 export 'layout/pavlova.dart';
-export 'layout/scaffold.dart';
 export 'layout/stack.dart';
 
 export 'navigation/basic.dart';

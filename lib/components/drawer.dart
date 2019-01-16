@@ -17,16 +17,6 @@ class JWFDDrawerState extends State<JWFDDrawer> {
       'isExpanded': false,
       'items': [
         {
-          'title': 'Scaffold',
-          'isSelected': false,
-          'pageBuilder': (BuildContext context) => ScaffoldPage(),
-        },
-        {
-          'title': 'Pavlova',
-          'isSelected': false,
-          'pageBuilder': (BuildContext context) => PavlovaPage(),
-        },
-        {
           'title': 'Horizontal and Vertical Align',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => HoriVertAlignPage(),
@@ -65,6 +55,11 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'title': 'Card',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => CardPage(),
+        },
+        {
+          'title': 'Pavlova',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => PavlovaPage(),
         },
         {
           'title': 'Lake',

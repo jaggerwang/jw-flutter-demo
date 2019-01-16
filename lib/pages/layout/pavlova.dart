@@ -100,7 +100,7 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
     );
 
     final leftColumn = Container(
-      padding: EdgeInsets.fromLTRB(20, 30, 20, 20),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       child: Column(
         children: [
           titleText,
@@ -123,11 +123,10 @@ Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlo
       drawer: JWFDDrawer(),
       body: Center(
         child: Container(
-          margin: EdgeInsets.fromLTRB(0, 40, 0, 30),
+          margin: EdgeInsets.all(5),
           height: 600,
           child: Card(
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   width: 440,
