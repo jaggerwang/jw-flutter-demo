@@ -29,12 +29,9 @@ class SendDataPage extends StatelessWidget {
         itemCount: todos.length,
         itemBuilder: (context, index) => ListTile(
               title: Text(todos[index].title),
-              onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => _DetailPage(todo: todos[index]),
-                    ),
-                  ),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => _DetailPage(todo: todos[index]),
+                  )),
             ),
       ),
     );

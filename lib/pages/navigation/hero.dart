@@ -15,9 +15,9 @@ class HeroPage extends StatelessWidget {
           tag: 'imageHero',
           child: Image.asset('assets/images/lake.jpg'),
         ),
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) {
-              return _DetailPage();
-            })),
+        onTap: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => _DetailPage(),
+            )),
       ),
     );
   }
@@ -37,7 +37,7 @@ class _DetailPage extends StatelessWidget {
             child: Image.asset('assets/images/lake.jpg'),
           ),
         ),
-        onTap: () => Navigator.pop(context),
+        onTap: () => Navigator.of(context).pop(),
       ),
     );
   }

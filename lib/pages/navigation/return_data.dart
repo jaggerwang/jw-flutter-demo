@@ -10,26 +10,23 @@ class ReturnDataPage extends StatelessWidget {
         title: Text('Return Data'),
       ),
       drawer: JWFDDrawer(),
-      body: Center(child: _SelectionButton()),
-    );
-  }
-}
+      body: Builder(
+        builder: (context) => Center(
+              child: RaisedButton(
+                onPressed: () async {
+                  final result =
+                      await Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => _SelectionPage(),
+                  ));
 
-class _SelectionButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return RaisedButton(
-      onPressed: () async {
-        final result = await Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => _SelectionPage()),
-        );
-
-        Scaffold.of(context)
-          ..removeCurrentSnackBar()
-          ..showSnackBar(SnackBar(content: Text('$result')));
-      },
-      child: Text('Pick an option, any option!'),
+                  Scaffold.of(context)
+                    ..removeCurrentSnackBar()
+                    ..showSnackBar(SnackBar(content: Text('$result')));
+                },
+                child: Text('Pick an option, any option!'),
+              ),
+            ),
+      ),
     );
   }
 }
@@ -48,14 +45,14 @@ class _SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8),
               child: RaisedButton(
-                onPressed: () => Navigator.pop(context, 'Yep!'),
+                onPressed: () => Navigator.of(context).pop('Yep!'),
                 child: Text('Yep!'),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8),
               child: RaisedButton(
-                onPressed: () => Navigator.pop(context, 'Nope.'),
+                onPressed: () => Navigator.of(context).pop('Nope.'),
                 child: Text('Nope.'),
               ),
             )
