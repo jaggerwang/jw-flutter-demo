@@ -1,8 +1,9 @@
 # JW Flutter Demo
 
-Learn flutter widgets and apis by usage examples.
+Learn flutter widgets and apis by examples.
 
-[相关中文博客文章](https://blog.jaggerwang.net/tag/jwfd/)
+[相关视频课程](https://blog.jaggerwang.net/jw-course-flutter-mobile-app-development/)
+[相关博客文章](https://blog.jaggerwang.net/tag/jwfd/)
 
 <img src="https://user-images.githubusercontent.com/1255011/50536932-f1b8db80-0b94-11e9-99dd-87eeb967151a.png" width="240">
 
