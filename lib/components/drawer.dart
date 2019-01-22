@@ -78,11 +78,6 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'pageBuilder': (BuildContext context) => BasicNavigationPage(),
         },
         {
-          'title': 'TabBar',
-          'isSelected': false,
-          'pageBuilder': (BuildContext context) => TabBarNavigationPage(),
-        },
-        {
           'title': 'Send Data',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => SendDataPage(),
@@ -107,12 +102,22 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'isSelected': false,
           'pageBuilder': (BuildContext context) => NestedNavigationPage(),
         },
+        {
+          'title': 'TabBar',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => TabBarNavigationPage(),
+        },
       ],
     },
     {
       'title': 'Ineraction',
       'isExpanded': false,
       'items': [
+        {
+          'title': 'Tabbox',
+          'isSelected': false,
+          'pageBuilder': (BuildContext context) => TapboxPage(),
+        },
         {
           'title': 'Favorite Lake',
           'isSelected': false,
@@ -127,11 +132,6 @@ class JWFDDrawerState extends State<JWFDDrawer> {
           'title': 'Silver App Bar',
           'isSelected': false,
           'pageBuilder': (BuildContext context) => SilverAppBarScrollPage(),
-        },
-        {
-          'title': 'Tabbox',
-          'isSelected': false,
-          'pageBuilder': (BuildContext context) => TapboxPage(),
         },
       ],
     },

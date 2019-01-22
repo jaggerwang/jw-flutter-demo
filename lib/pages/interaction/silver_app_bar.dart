@@ -56,8 +56,6 @@ class _BodyState extends State<_Body> {
   }
 
   void _scrollListener() {
-    print(
-        'scroll position: ${_scrollController.position.pixels} ${_scrollController.position.maxScrollExtent}');
     final index = DefaultTabController.of(context).index;
     if (_scrollController.position.pixels ==
         _scrollController.position.maxScrollExtent) {
@@ -66,12 +64,10 @@ class _BodyState extends State<_Body> {
   }
 
   void _loadItems(String name) {
-    print('load items for $name');
     setState(() {
       final start = _items[name].length;
       _items[name]
           .addAll(List<String>.generate(20, (i) => 'Item ${start + i}'));
-      print(_items[name]);
     });
   }
 
@@ -79,9 +75,34 @@ class _BodyState extends State<_Body> {
     return SliverOverlapAbsorber(
       handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
       child: SliverAppBar(
-        title: const Text('Silver App Bar'),
-        expandedHeight: 150,
+        expandedHeight: 240,
         forceElevated: innerBoxIsScrolled,
+        flexibleSpace: Container(
+          padding: EdgeInsets.all(5),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Spacer(flex: 5),
+              Text(
+                'Silver App Bar',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Spacer(),
+              Text(
+                'Intro',
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: 16,
+                ),
+              ),
+              Spacer(flex: 5),
+            ],
+          ),
+        ),
         bottom: TabBar(
           tabs: widget.tabs.map((String name) => Tab(text: name)).toList(),
         ),

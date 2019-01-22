@@ -11,7 +11,6 @@ class _RefreshIndicatorPageState extends State<RefreshIndicatorPage> {
   final _controller = ScrollController();
 
   Future<Null> _refresh() {
-    print('refreshed');
     return Future.value(null);
   }
 
