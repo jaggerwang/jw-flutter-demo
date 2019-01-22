@@ -6,6 +6,40 @@ Learn flutter widgets and apis by examples.
 
 <img src="https://user-images.githubusercontent.com/1255011/50536932-f1b8db80-0b94-11e9-99dd-87eeb967151a.png" width="240">
 
+## How to run
+
+### Install flutter sdk
+
+Please refer to flutter official document [Install](https://flutter.io/docs/get-started/install).
+
+### Clone repository
+
+```bash
+git clone git@github.com:jaggerwang/jw-weiguan.git && cd jw-weiguan
+```
+
+### Install pub packages
+
+```bash
+flutter packages get
+```
+
+### Connect a device or run a simulator
+
+Connet your Android or iOS device to your computer or run a simulator using the following commands.
+
+```bash
+$ emulator -list-avds
+9.0-1440p
+$ emulator -avd 9.0-1440p
+```
+
+### Build and run app
+
+```bash
+flutter run
+```
+
 ## Layout
 
 ### Horizontal and Vertical Align
@@ -106,3 +140,20 @@ Learn flutter widgets and apis by examples.
 <img src="https://user-images.githubusercontent.com/1255011/50536934-f5e4f900-0b94-11e9-9bee-da0fa05d512e.png" width="240">
 
 ## Interaction
+
+### TabBox
+
+<img src="https://user-images.githubusercontent.com/1255011/51512797-bed7cf80-1e42-11e9-9366-1484dc900465.png" width="240">
+
+
+### Favorite Lake
+
+<img src="https://user-images.githubusercontent.com/1255011/51513139-36f2c500-1e44-11e9-8743-b78a14688b12.png" width="240">
+
+### Refresh Indicator
+
+<img src="https://user-images.githubusercontent.com/1255011/51512777-a9fb3c00-1e42-11e9-833b-2ddfba004d49.png" width="240">
+
+### Silver App Bar
+
+<img src="https://user-images.githubusercontent.com/1255011/51513104-0f9bf800-1e44-11e9-9e4f-160dc5f3965b.png" width="240">
