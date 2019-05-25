@@ -161,7 +161,7 @@ flutter run
 
 ### 2019-05-25
 
-1. Upgrade Flutter SDK version to v1.5.
+1. Upgrade Flutter SDK to v1.5.
 
 ### 2018-12-26
 
