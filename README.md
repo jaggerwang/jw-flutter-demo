@@ -145,7 +145,6 @@ flutter run
 
 <img src="https://user-images.githubusercontent.com/1255011/51512797-bed7cf80-1e42-11e9-9366-1484dc900465.png" width="240">
 
-
 ### Favorite Lake
 
 <img src="https://user-images.githubusercontent.com/1255011/51513139-36f2c500-1e44-11e9-8743-b78a14688b12.png" width="240">
@@ -157,3 +156,13 @@ flutter run
 ### Silver App Bar
 
 <img src="https://user-images.githubusercontent.com/1255011/51513104-0f9bf800-1e44-11e9-9e4f-160dc5f3965b.png" width="240">
+
+## Changelog
+
+### 2019-05-25
+
+1. Upgrade Flutter SDK version to v1.5.
+
+### 2018-12-26
+
+1. First release.
